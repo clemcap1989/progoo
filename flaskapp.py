@@ -9,14 +9,14 @@ app.config['SECRET_KEY'] = '0c2608d46f12480aba8837cf2807454a'
 posts = [
     {
         'author' : 'Clément Barré',
-        'title' : 'Blog Post 1',
-        'content' : 'First post content',
+        'title' : 'Post numéro 1',
+        'content' : 'Contenu post numéro 1',
         'date_posted' : 'March 3, 2024'
     },
     {
         'author' : 'Soma Manmi',
-        'title' : 'Blog Post 2',
-        'content' : 'Second post content',
+        'title' : 'Post numéro 2',
+        'content' : 'Contenu post numéro 2',
         'date_posted' : 'March 3, 2024'
     },
 ]
