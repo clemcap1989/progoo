@@ -23,9 +23,6 @@ class User(db.Model):
     password = db.Column(db.String(60), nullable=False)
     posts = db.relationship('Post', backref='author', lazy=True)
 
-with app.app_context():
-    db.create_all()
-
 def __repr__(self):
     return '<User %r>' % self.username
 
@@ -38,6 +35,9 @@ class Post(db.Model):
 
 def __repr__(self):
     return f"Post('{self.title}', '{self.date_posted}')"
+
+with app.app_context():
+    db.create_all()
 
 posts = [
     {
@@ -62,7 +62,6 @@ def home():
 @app.route("/about")
 def about():
     return render_template('about.html', title='About')
-
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
