@@ -8,6 +8,7 @@ app.config['SECRET_KEY'] = '0c2608d46f12480aba8837cf2807454a'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
 
+
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(20), unique=True, nullable=False)
@@ -17,7 +18,7 @@ class User(db.Model):
     posts = db.relationship('Post', backref='author', lazy=True)
 
 def __repr__(self):
-    return f"User('{self.username}', '{self.email}', '{self.image_file}')"
+    return '<User %r>' % self.username
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
