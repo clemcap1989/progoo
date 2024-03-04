@@ -8,6 +8,8 @@ app.config['SECRET_KEY'] = '0c2608d46f12480aba8837cf2807454a'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
 
+app.app_context().push()
+
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
