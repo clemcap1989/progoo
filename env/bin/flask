@@ -1,4 +1,4 @@
-#!/Users/cbarre/Desktop/progoo/env/bin/python
+#!/Users/clement.barre/Desktop/progoo/env/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys
