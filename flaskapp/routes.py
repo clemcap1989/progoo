@@ -7,16 +7,16 @@ from flask_login import login_user, current_user, logout_user, login_required
 
 posts = [
     {
-        'author': 'Corey Schafer',
+        'author': 'Clément Barré',
         'title': 'Blog Post 1',
-        'content': 'First post content',
-        'date_posted': 'April 20, 2018'
+        'content': 'Premier contenu',
+        'date_posted': '16 Mars 2024'
     },
     {
-        'author': 'Jane Doe',
+        'author': 'Soma manmi',
         'title': 'Blog Post 2',
-        'content': 'Second post content',
-        'date_posted': 'April 21, 2018'
+        'content': 'Second contenu',
+        'date_posted': '3 Juin 2024'
     }
 ]
 
